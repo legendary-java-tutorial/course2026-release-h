@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "manual",
+    "deny": [
+      "Bash(docker volume rm *)",
+      "Bash(docker compose down -v*)",
+      "Bash(docker system prune *)",
+      "Read(./secrets/**)"
+    ]
+  }
+}
