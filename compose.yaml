@@ -1,8 +1,9 @@
 services:
   app:
-    image: vezhnin/course2026-release-h:1.2.0
+    build: .
+    image: app:dev
     ports:
-      - "8080:3000"
+      - "127.0.0.1:8080:3000"
     volumes:
       - data:/data
 
